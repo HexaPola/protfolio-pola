@@ -37,32 +37,8 @@ body {
   padding: 2rem;
   perspective: 250rem;
   animation: show-animate 2s forwards;
-  /* يخلي الكتاب يتناسب مع أي شاشة */
-
-  max-width: 100%;
-  max-height: 100vh;
-  width: 66rem;
-  height: 45rem;
-  padding: 2rem;
-  perspective: 250rem;
-  animation: show-animate 2s forwards;
-  transform: scale(1);
-  transform-origin: top center;
+  
 }
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    transform: scale(0.8);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .wrapper {
-    transform: scale(0.65);
-  }
-}
-
-
 
 @keyframes show-animate {
   0%,
@@ -456,5 +432,29 @@ body {
   .wrapper {
     width: 60rem;
     height: 40rem;
+  }
+}
+/* يخلي الكتاب يتناسب مع أي شاشة */
+.wrapper {
+  max-width: 100%;
+  max-height: 100vh;
+  width: 66rem;
+  height: 45rem;
+  padding: 2rem;
+  perspective: 250rem;
+  animation: show-animate 2s forwards;
+  transform: scale(1);
+  transform-origin: top center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    transform: scale(0.65);
   }
 }
